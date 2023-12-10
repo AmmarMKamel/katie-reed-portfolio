@@ -1,0 +1,12 @@
+<section class="py-5" id="projects">
+  <div class="container">
+    <h2 class="display-3">Portfolio</h2>
+    <div class="row">
+      <app-project-card class="col-4" *ngFor="let project of projects; let i = index"
+                        [ngClass]="{ 'no-border': i >= projects.length - 3}"
+                        [bgColor] = "i % 2 === 0 ? 'bg-secondary' : 'bg-dark'"
+                        [border] = "i < projects.length - 3 ? 'border-2 border-bottom' : ''"
+                        [project]="project"></app-project-card>
+    </div>
+  </div>
+</section>
