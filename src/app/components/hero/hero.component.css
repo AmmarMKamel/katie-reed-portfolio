@@ -1,0 +1,5 @@
+section {
+  background: url("/assets/background.jpg") no-repeat center/cover;
+  height: 700px;
+  filter: grayscale(100%);
+}
